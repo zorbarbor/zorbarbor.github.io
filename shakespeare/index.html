@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Learn German with Shakespeare — A Midsummer Night’s Dream (Test)</title>
+	<meta name="description" content="Alternating English→German lines from A Midsummer Night’s Dream with speaker announcements. Listen on Spotify.">
+	<link rel="stylesheet" href="styles.css">
+	<meta property="og:title" content="Learn German with Shakespeare — A Midsummer Night’s Dream (Test)">
+	<meta property="og:description" content="Alternating English→German lines with speaker announcements. Listen on Spotify.">
+	<meta property="og:image" content="/shakespeare/images/en_de.jpg">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container">
+			<h1>Learn German with Shakespeare</h1>
+			<p class="tagline">A Midsummer Night’s Dream — EN → DE (Test)</p>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="hero">
+			<div class="hero-art" aria-hidden="true" style="background-image:url('images/en_de.jpg'); background-size:cover; background-position:center;"></div>
+			<div class="hero-cta">
+				<p>Enjoy alternating English then German lines, with one‑time speaker announcements. Perfect for language learners.</p>
+				<!-- TODO: Replace the link below with your actual Spotify episode URL -->
+				<a class="btn" href="https://open.spotify.com/episode/PASTE_EPISODE_ID" target="_blank" rel="noopener">Listen on Spotify</a>
+				<p class="note">Audio is available exclusively on Spotify. No media is hosted here.</p>
+			</div>
+		</section>
+
+		<section class="details">
+			<h2>About this episode</h2>
+			<ul>
+				<li>Source: A Midsummer Night’s Dream (public domain)</li>
+				<li>Flow: Announcement → English line → German line</li>
+				<li>Voices: Speaker‑aware English; neutral German</li>
+			</ul>
+		</section>
+
+		<section class="details">
+			<h2>How to use</h2>
+			<ol>
+				<li>Press “Listen on Spotify”.</li>
+				<li>Hear each line in English, then immediately in German.</li>
+				<li>Use Spotify’s transcript (if enabled) with our WebVTT timing for follow‑along practice.</li>
+				<li>Pause after each German line and shadow the sentence aloud.</li>
+			</ol>
+		</section>
+
+		<section class="details">
+			<h2>Contact</h2>
+			<p>Email: <a id="email" href="#" rel="nofollow"></a></p>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© <span id="y"></span> Learn with Shakespeare • <a href="https://github.com/zorbarbor" target="_blank" rel="noopener">GitHub</a></p>
+		</div>
+	</footer>
+	<script>
+		document.getElementById('y').textContent = new Date().getFullYear();
+		// Obfuscate email to deter scraping
+		(function(){
+			var u = 'zohar.barzelay';
+			var d = 'gmail';
+			var t = 'com';
+			var addr = u + '@' + d + '.' + t;
+			var a = document.getElementById('email');
+			a.textContent = addr;
+			a.href = 'mailto:' + addr;
+		})();
+	</script>
+</body>
+</html> 
