@@ -50,7 +50,18 @@
 
 		<section class="details">
 			<h2>Contact</h2>
-			<p>Email: <a id="email" href="#" rel="nofollow"></a></p>
+			<form action="https://formspree.io/f/REPLACE_FORM_ID" method="POST">
+				<label>
+					Your email
+					<input type="email" name="email" required>
+				</label>
+				<label>
+					Message
+					<textarea name="message" rows="5" required></textarea>
+				</label>
+				<button class="btn" type="submit">Send</button>
+			</form>
+			<p class="note">Your message is relayed via a secure form service; no direct email is exposed.</p>
 		</section>
 	</main>
 
@@ -61,16 +72,6 @@
 	</footer>
 	<script>
 		document.getElementById('y').textContent = new Date().getFullYear();
-		// Obfuscate email to deter scraping
-		(function(){
-			var u = 'zohar.barzelay';
-			var d = 'gmail';
-			var t = 'com';
-			var addr = u + '@' + d + '.' + t;
-			var a = document.getElementById('email');
-			a.textContent = addr;
-			a.href = 'mailto:' + addr;
-		})();
 	</script>
 </body>
 </html> 
